@@ -10,12 +10,14 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
+import androidx.compose.runtime.saveable.rememberSaveable
 import com.adnane.hellocounter.R
 
 @Composable
 fun DireBonjourSection(modifier: Modifier = Modifier) {
-    var name by remember { mutableStateOf("") }
-    var greetingName by remember { mutableStateOf<String?>(null) }
+    var name by rememberSaveable { mutableStateOf("") }
+    var greetingName by rememberSaveable { mutableStateOf<String?>(null) }
+
 
     Column(
         modifier = modifier.fillMaxWidth(),
