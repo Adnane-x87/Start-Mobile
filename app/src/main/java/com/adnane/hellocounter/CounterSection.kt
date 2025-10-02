@@ -17,7 +17,7 @@ import com.adnane.hellocounter.R
 
 @Composable
 fun CompteurSection(modifier: Modifier = Modifier) {
-    var count by rememberSaveable { mutableStateOf(0) }
+    var count by rememberSaveable {mutableStateOf(0) }
 
 
 
